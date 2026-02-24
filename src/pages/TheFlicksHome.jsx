@@ -1,4 +1,4 @@
-
+import {Link} from 'react-router-dom'
 
 function TheFlicksHome({ flicks }) {
 
@@ -10,7 +10,8 @@ function TheFlicksHome({ flicks }) {
                     <div>
                         <h1>{flick.title}</h1>
                         <p>{flick.abstract}</p>
-                        <a href="flicks/2">dettagli</a>
+
+                        <Link to ={`flicks/${flick.id}`}>dettagli</Link>
                     </div>
                 ))}
 
